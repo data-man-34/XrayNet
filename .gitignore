@@ -3,3 +3,6 @@ images/
 xrayNet-v1.model.data-00000-of-00001
 xrayNet-v1.model.index
 xrayNet-v1.model.meta
+ARCHIVE/
+*.h5
+*.npz
