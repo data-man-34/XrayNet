@@ -6,3 +6,4 @@ xrayNet-v1.model.meta
 ARCHIVE/
 *.h5
 *.npz
+*.npy
