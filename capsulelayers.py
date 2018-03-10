@@ -123,7 +123,7 @@ class CapsuleLayer(layers.Layer):
         # W.shape=[num_capsule, input_num_capsule, dim_capsule, input_dim_capsule]
         # Regard the first two dimensions as `batch` dimension,
         # then matmul: [input_dim_capsule] x [dim_capsule, input_dim_capsule]^T -> [dim_capsule].
-        inputs_hat.shape = [None, num_capsule, input_num_capsule, dim_capsule]
+        # inputs_hat.shape = [None, num_capsule, input_num_capsule, dim_capsule]
         inputs_hat = K.map_fn(lambda x: K.batch_dot(x, self.W, [2, 3]), elems=inputs_tiled)
 
         """
